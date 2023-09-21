@@ -175,6 +175,7 @@ button {
 .options{
     display: flex;
     flex-direction: column;
+    max-width: 70%;
 }
 
 /* CSS untuk menghilangkan bilah geser pada tabel */
