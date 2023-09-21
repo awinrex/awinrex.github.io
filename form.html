@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form id="myForm">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required><br><br>
+
+        <label for="pilihan">Pilihan:</label>
+        <select id="pilihan" name="pilihan">
+            <option value="Pilihan 1">Pilihan 1</option>
+            <option value="Pilihan 2">Pilihan 2</option>
+            <option value="Pilihan 3">Pilihan 3</option>
+        </select><br><br>
+
+        <label for="alamat">Alamat:</label>
+        <textarea id="alamat" name="alamat" rows="4" required></textarea><br><br>
+
+        <button type="button" onclick="tambahData()">Submit</button>
+    </form>
+
+    <table id="dataTabel">
+        <tr>
+            <th>Nama</th>
+            <th>Pilihan</th>
+            <th>Alamat</th>
+        </tr>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>

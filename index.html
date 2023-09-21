@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Link ke CSS untuk desktop -->
+<link rel="stylesheet" href="CSS_LANDING PAGE.css" media="screen and (min-width: 900px)">
+
+<!-- Link ke CSS untuk perangkat seluler -->
+<link rel="stylesheet" href="CSS_LANDING PAGE(HP).css" media="screen and (max-width: 899px)">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>Kids Clever Bimbel Gorontalo</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-left">
+                <img src="logo.png" alt="Kids Clever Bimbel Gorontalo Logo">
+            </div>
+            <div class="header-right">
+                <a href="#" class="button">Price List</a>
+                <a href="#" class="button">Maps</a>
+                <a href="#" class="button">Contact</a>
+            </div>
+        </div>
+        <div class="header-text">
+            KIDS CLEVER BIMBEL GORONTALO
+        </div>
+    </header>
+    <main class="main">
+        <div class="login-container">
+            <h2>LOGIN</h2>
+            <form>
+                <div class="input-group">
+                    <label for="pilihan">Jenis User :</label>
+                         <select id="pilihan" name="pilihan">
+                         <option value="Pilihan 1">ADMIN</option>
+                         <option value="Pilihan 2">TENTOR</option>
+                         <option value="Pilihan 3">SISWA</option>
+                     </select><br><br>
+                </div>
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="button" id="show-password"><i class="fa fa-eye-slash"></i></button>
+                </div>                              
+                <button type="button" class="login-button" id="login-button">Login</button>
+            </form>
+        </div>          
+        <div class="ad-container">
+            <h2>Belum menjadi siswa KC BIMBEL?</h2>
+            <p>Daftar Sekarang!</p>
+            <a href="FORMULIR1.html" class="register-button">Daftar</a>
+        </div>
+        <script src="script pindah.js"></script> 
+    </main>
+</body>
+</html>

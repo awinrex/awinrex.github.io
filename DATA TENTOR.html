@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Link ke CSS untuk desktop -->
+<link rel="stylesheet" href="CSS_DATA TENTOR.css" media="screen and (min-width: 900px)">
+
+<!-- Link ke CSS untuk perangkat seluler -->
+<link rel="stylesheet" href="CSS_DATA TENTOR(HP).css" media="screen and (max-width: 899px)">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Kids Clever Bimbel Gorontalo</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-left">
+                <img src="logo.png" alt="Kids Clever Bimbel Gorontalo Logo">
+            </div>
+            <div class="header-right">
+                <div class="user-info">
+                    <h2 id="username">USER</h2>
+                </div>
+                <div class="logout-button-container">
+                    <a href="#" class="button-logout" id="logout-button">Logout</a>
+                </div>
+            </div>           
+        </div>
+     
+        <div class="header-text">
+            KIDS CLEVER BIMBEL GORONTALO
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+              const kirimButton = document.getElementById("logout-button");
+              kirimButton.addEventListener("click", function() {
+                // Ganti URL di bawah dengan URL halaman HTML baru yang ingin Anda buka
+                const halamanBaruURL = "LANDING PAGE.html";
+                window.location.href = halamanBaruURL; // Mengarahkan ke halaman baru di tab yang sama
+              });
+            });
+            </script>
+    </header>
+    <div class="header-buttons">
+        <a href="DATA TENTOR.html" class="header-button" data-target="data-tentor">Data Tentor</a>
+        <a href="DATA SISWA.HTML" class="header-button" data-target="data-siswa">Data Siswa</a>        
+        <a href="DATA KELAS.html" class="header-button" data-target="data-kelas">Data Kelas</a>
+        <a href="#" class="header-button">Jadwal</a>
+        <a href="#" class="header-button">Rekap Absensi</a>
+        <a href="#" class="header-button">Formulir</a>
+        <a href="#" class="header-button">Bahan Ajar</a>
+        <a href="#" class="header-button">Feedback</a>
+    </div>    
+    <main>
+        <div class="options">
+            <h2 class="data-title">Data Tentor</h2>
+            <label for="bidang">Bidang:</label>
+            <select id="bidang" name="bidang">
+                <option value="Bidang 1">Bidang 1</option>
+                <option value="Bidang 2">Bidang 2</option>
+                <option value="Bidang 3">Bidang 3</option>
+            </select>
+            <button id="tampilkan">Tampilkan</button>
+        </div>
+        <div style="overflow-x:auto;" id="table">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama Tentor</th>
+                    <th>Bidang</th>
+                    <th>Jadwal</th>
+                    <th>Rekap Absen</th>
+                    <th>Berkas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1.</td>
+                    <td class="left-align">PUTRI NURRAHMA DARISE</td>
+                    <td>Bahasa Inggris</td>
+                    <td><button class="lihat-button">Lihat</button></td>
+                    <td><button class="lihat-button">Lihat</button></td>
+                    <td><button class="lihat-button">Lihat</button></td>
+                </tr>
+                <!-- Tambahkan baris data lainnya sesuai kebutuhan -->
+            </tbody>
+        </table>
+        </div>
+    </main>
+    <script src="script pindah.js"></script>
+    
+</body>
+</html>

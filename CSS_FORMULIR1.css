@@ -1,0 +1,110 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+}
+
+/* Apply styles to the header */
+header {
+    background-color: #0074cc;
+    color: white;
+    padding: 10px 0;
+    height: 65px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header-left img {
+    height: 55px;
+    align-items: center;
+    margin-top: 7.5px;
+    margin-right: 15px;
+    line-height: 10px;
+    display: inline-block; /* Mengubah display menjadi inline-block */
+}
+.header-text {
+    font-size: x-large;
+    align-items: top;
+    display: flex;
+    margin-left: 2.5cm;
+    margin-top: -1.2cm;
+}
+.header-right {
+    display: flex;
+}
+.header-right h2{
+    font-size: 20px;
+    margin-bottom: 10px; /* Atur jarak bawah untuk elemen h2 (Username) */
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0074cc;
+    border: 2px solid white;
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 10px;
+}
+.button:hover {
+    background-color: #005aa6; /* Warna latar belakang saat dihover */
+}
+
+/* Gaya untuk container utama */
+/* ... Kode CSS sebelumnya ... */
+
+/* Gaya untuk teks "PILIH PAKET BIMBEL" */
+.paket-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0074cc;
+    text-align: center; /* Tengahkan teks secara horizontal */
+    margin-bottom: 0.5cm;
+    margin-top: 1cm;
+}
+
+/* Gaya untuk container gambar */
+/* ... Kode CSS sebelumnya ... */
+
+/* Gaya untuk container gambar */
+.gambar-container {
+    display: flex;
+    flex-wrap: wrap; /* Baris baru jika gambar lebih dari 4 */
+    justify-content: center; /* Tengahkan gambar secara horizontal */
+    align-items: center; /* Tengahkan gambar secara vertikal */
+    width: 90%
+    padding: 20px; /* Berikan padding untuk memberi jarak dari pinggir */
+}
+
+/* Gaya untuk gambar */
+.gambar-container a {
+    flex: 0 0 calc(20% - 10px); /* Atur lebar agar ada 4 gambar per baris dan kurangi margin */
+    margin: 10px; /* Berikan margin antar gambar */
+    text-align: center; /* Tengahkan gambar secara horizontal */
+}
+
+/* Gaya untuk gambar */
+.gambar-container img {
+    height: auto; /* Menghindari distorsi gambar */
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    max-width: 100%
+    ;
+}
+
+/* Gaya saat menghover gambar */
+.gambar-container a:hover {
+    opacity: 0.7; /* Mengurangi opacity saat hover */
+}
+.main{
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
