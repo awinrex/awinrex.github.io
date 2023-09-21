@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+<h    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS_DATA SISWA.css">
+   <!-- Link ke CSS untuk desktop -->
+<link rel="stylesheet" href="CSS_DATA SISWA.css" media="screen and (min-width: 900px)">
+
+<!-- Link ke CSS untuk perangkat seluler -->
+<link rel="stylesheet" href="CSS_DATA SISWA(HP).css" media="screen and (max-width: 899px)">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Kids Clever Bimbel Gorontalo</title>
 </head>
 <body>
@@ -49,6 +54,7 @@
     <main>
         <div class="options">
             <h2 class="data-title">Data Siswa</h2>
+            <div id="input-group">
             <label for="Jenis Bimbel">Jenis Bimbel:</label>
             <select id="Jenis-Bimbel" name="Jenis Bimbel">
                 <option value="Jenis Bimbel 1">CPNS</option>
@@ -56,6 +62,7 @@
                 <option value="Jenis Bimbel 3">KEDINASAN</option>
             </select>
             <button id="tampilkan">Tampilkan</button>
+
             <label for="Kategori"></label>
             <label for="Kategori">Kategori :</label>
             <select id="Kategori" name="Kategori">
@@ -65,6 +72,8 @@
             </select>
             <button id="tampilkan">Tampilkan</button>
         </div>
+        </div>
+        <div style="overflow-x:auto;" id="table">
         <table class="data-table">
             <thead>
                 <tr>
@@ -92,6 +101,7 @@
                 <!-- Tambahkan baris data lainnya sesuai kebutuhan -->
             </tbody>
         </table>
+    </div>
     </main>
     <script src="script pindah.js">
     </script>
