@@ -114,4 +114,41 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   });
 });
+
+
+//untuk mendapatkan data API
+// Contoh menggunakan Google Apps Script Web App URL
+const scriptUrl = '';
+
+fetch(scriptUrl)
+  .then(response => response.json())
+  .then(data => {
+    // Manipulasi data dan tambahkan ke tabel HTML
+    const tableBody = document.querySelector('#table tbody');
+    data.forEach((row, index) => {
+      const newRow = document.createElement('tr');
+      newRow.innerHTML = `
+        <td>${index + 1}</td>
+        <td>${row.nama}</td>
+        <td>${row.bidang}</td>
+        <td><button class="lihat-button">Lihat</button></td>
+        <td><button class="lihat-button">Lihat</button></td>
+        <td><button class="lihat-button">Lihat</button></td>
+      `;
+      tableBody.appendChild(newRow);
+    });
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+
+  function updateTable() {
+    // Isi kode JavaScript untuk mengambil data dari Google Sheets dan memperbarui tabel HTML
+    // ...
+  }
+  
+  // Buat trigger yang akan menjalankan fungsi updateTable() setiap 5 detik (5000 milidetik)
+  const updateInterval = 5000; // 5000 ms (5 detik)
+  setInterval(updateTable, updateInterval);
+  
   
