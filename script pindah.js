@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //untuk mendapatkan data API
 // Contoh menggunakan Google Apps Script Web App URL
-const scriptUrl = '';
+const scriptUrl = 'https://script.google.com/macros/s/AKfycbzFTU-R0G2uAwmv9a7sb-JPVBrNr0kUAis9eY_UOcDNjM6IfUgpmpUgYna_Yl-XYEzoQg/exec';
 
 fetch(scriptUrl)
   .then(response => response.json())
