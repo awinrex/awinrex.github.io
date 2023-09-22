@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <!-- Link ke CSS untuk desktop -->
-<link rel="stylesheet" href="CSS_FORMULIR2.css" media="screen and (min-width: 900px)">
+<link rel="stylesheet" href="CSS_FORMULIR(send).css" media="screen and (min-width: 900px)">
 
 <!-- Link ke CSS untuk perangkat seluler -->
-<link rel="stylesheet" href="CSS_FORMULIR2(HP).css" media="screen and (max-width: 899px)">
+<link rel="stylesheet" href="CSS_FORMULIR(send)(HP).css" media="screen and (max-width: 899px)">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -37,7 +37,7 @@
     <h1 id="title">FORMULIR PENDAFTARAN</h1>
     <main class="main">
         <div class="section-left">
-        <form id="CALISTUNG-form">
+        <form id="calistung-form">
             <div class="input-group">
             <label for="nama">NAMA LENGKAP:</label>
             <input type="text" id="nama" name="nama" required><br><br>
@@ -60,16 +60,16 @@
     </div>
         <div class="section-right">
         <div class="input-group">
-            <label for="no_hp_ortu">EMAIL:</label>
-            <input type="text" id="no_hp_ortu" name="no_hp_ortu" required><br><br>
+            <label for="email">EMAIL:</label>
+            <input type="text" id="email" name="email" required><br><br>
         
-            <label for="no_hp">NO. HP/WHATSAPP:</label>
-            <input type="text" id="no_hp" name="no_hp" required><br><br>
+            <label for="telepon">TELEPON / WHATSAPP:</label>
+            <input type="text" id="telepon" name="telepon" required><br><br>
         
-            <label for="no_hp_ortu">NO. HP/WHATSAPP ORANG TUA:</label>
-            <input type="text" id="no_hp_ortu" name="no_hp_ortu" required><br><br>
+            <label for="telepon_ortu">NO. HP/WHATSAPP ORANG TUA:</label>
+            <input type="text" id="telepon_ortu" name="telepon_ortu" required><br><br>
 
-            <label for="paket">KATEGORI:</label>
+            <label for="kategori">KATEGORI:</label>
             <select id="kategori" name="kategori" required>
                 <option value="Pilih">Pilih Kategori</option>
                 <option value="PRIVAT">PRIVAT</option>
@@ -86,13 +86,13 @@
             </select>
             <br><br>
             </div>
-        </form> 
+        <script src="formulir.js"></script> 
         </div> 
-        <script src="script pindah.js"></script> 
     </main>
     <div class="button-container">
         <button type="button" id="back-button" onclick="history.back()">KEMBALI</button>
-    <button type="button" id="next-button">KIRIM</button>
+        <button type="submit" id="main-button">KIRIM</button>
 </div>
+</form> 
 </body>
 </html>

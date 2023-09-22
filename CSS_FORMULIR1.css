@@ -108,3 +108,21 @@ header {
     justify-content: center;
     align-items: center;
 }
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: .5cm;
+    margin-bottom: 1cm;
+}
+    
+#back-button{
+    background-color: white;
+    color: #0074cc;
+    border: 3px solid #0074cc;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+}

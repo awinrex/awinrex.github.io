@@ -89,13 +89,48 @@ header {
 .header-button:hover {
     background-color: rgb(54, 64, 81); /* Warna latar belakang saat dihover */
 }
+#plus-button{
+    font-size: small;
+    padding: 5px 10px;
+    margin-top: 2px;
+    background-color: #24577f;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#button :hover{
+color: #24577f;
+background-color: #ffffff;
+
+}
+
+
+.top-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    align
+}
 /* Gaya untuk opsi dan tombol */
 .options {
     margin: 20px;
+    margin-top: -20px;
 }
 
+.input-group{
+    display: flex;
+    flex-direction: column;
+
+}
+.data-header{
+    display: flex;
+    align-items: ;
+}
 label {
-    margin-right: 10px;
+    margin-right: 1px;
 }
 
 select {
@@ -112,6 +147,7 @@ select {
     cursor: pointer;
     margin-left: 10px;
     margin-top: 0.5cm;
+
 }
 .data-title {
     margin-bottom: 17px;
@@ -137,6 +173,7 @@ select {
     overflow-x: auto; /* Tampilkan bilah geser horizontal jika konten tabel terlalu lebar */
     max-width: 100%; /* Lebar maksimum sesuai dengan lebar jendela */
 }
+
 
 /* Gaya untuk tabel data */
 .data-table {

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<h    <meta charset="UTF-8">
+<head>    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <!-- Link ke CSS untuk desktop -->
 <link rel="stylesheet" href="CSS_DATA SISWA.css" media="screen and (min-width: 900px)">
@@ -52,56 +52,55 @@
         <a href="#" class="header-button">Feedback</a>
     </div>    
     <main>
-        <div class="options">
-            <h2 class="data-title">Data Siswa</h2>
-            <div id="input-group">
-            <label for="Jenis Bimbel">Jenis Bimbel:</label>
-            <select id="Jenis-Bimbel" name="Jenis Bimbel">
-                <option value="Jenis Bimbel 1">CPNS</option>
-                <option value="Jenis Bimbel 2">TNI/POLRI</option>
-                <option value="Jenis Bimbel 3">KEDINASAN</option>
-            </select>
-            <button id="tampilkan">Tampilkan</button>
-
-            <label for="Kategori"></label>
-            <label for="Kategori">Kategori :</label>
-            <select id="Kategori" name="Kategori">
-                <option value="Kategori 1">PRIVAT</option>
-                <option value="Kategori 2">SEMI PRIVAT</option>
-                <option value="Kategori 3">GROUP</option>
-            </select>
-            <button id="tampilkan">Tampilkan</button>
+        <main>
+            <div class="options">
+                <h2 class="data-title">Data Siswa</h2>
+                <label for="Jenis Bimbel">Jenis Bimbel:</label>
+                <select id="Jenis-Bimbel" name="Jenis Bimbel">
+                    <option value="Jenis Bimbel 1">CPNS</option>
+                    <option value="Jenis Bimbel 2">TNI/POLRI</option>
+                    <option value="Jenis Bimbel 3">KEDINASAN</option>
+                </select>
+                <button id="tampilkan">Tampilkan</button>
+                <label for="Kategori"></label>
+                <label for="Kategori">Kategori :</label>
+                <select id="Kategori" name="Kategori">
+                    <option value="Kategori 1">PRIVAT</option>
+                    <option value="Kategori 2">SEMI PRIVAT</option>
+                    <option value="Kategori 3">GROUP</option>
+                </select>
+                <button id="tampilkan">Tampilkan</button>
+            </div>
+            <div style="overflow-x:auto;" id="table">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nama</th>
+                        <th>Jenis Bimbel</th>
+                        <th>Kategori</th>
+                        <th>Nama Kelas</th>
+                        <th>Jumlah Pertemuan</th>
+                        <th>Jumlah Kehadiran</th>
+                        <th>Pertemuan Saat ini</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.</td>
+                        <td class="left-align">AGIS BERLIYAN LINTANG SAKTI</td>
+                        <td>TNI/POLRI</td>
+                        <td>PRIVAT</td>
+                        <td>BINTARA 02</td>
+                        <td>32 MEET</td>
+                        <td>10</td>
+                        <td>10</td>
+                    </tr>
+                    <!-- Tambahkan baris data lainnya sesuai kebutuhan -->
+                </tbody>
+            </table>
         </div>
-        </div>
-        <div style="overflow-x:auto;" id="table">
-        <table class="data-table">
-            <thead>
-                <tr>
-                    <th>No</th>
-                    <th>Nama</th>
-                    <th>Jenis Bimbel</th>
-                    <th>Kategori</th>
-                    <th>Nama Kelas</th>
-                    <th>Jumlah Pertemuan</th>
-                    <th>Jumlah Kehadiran</th>
-                    <th>Pertemuan Saat ini</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1.</td>
-                    <td class="left-align">AGIS BERLIYAN LINTANG SAKTI</td>
-                    <td>TNI/POLRI</td>
-                    <td>PRIVAT</td>
-                    <td>BINTARA 02</td>
-                    <td>32 MEET</td>
-                    <td>10</td>
-                    <td>10</td>
-                </tr>
-                <!-- Tambahkan baris data lainnya sesuai kebutuhan -->
-            </tbody>
-        </table>
-    </div>
+        </main>
     </main>
     <script src="script pindah.js">
     </script>

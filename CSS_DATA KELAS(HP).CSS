@@ -40,6 +40,20 @@ header {
 .header-right {
     display: flex;
 }
+
+#plus-button{
+    font-size: x-small;
+    max-width: 7cm;
+    margin-top: 2px;
+}
+
+.top-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    align-items: center;
+}
 .header-right {
     font-size: 10px;
     margin-right: -.2cm;
@@ -56,6 +70,7 @@ header {
 .logout-button-container {
     margin-top: 30px;
 }
+
 
 .button-logout {
     text-decoration: none;
@@ -98,6 +113,7 @@ header {
     display: none; /* Sembunyikan scrollbar di Chrome, Safari, dan Opera */
 }
 
+
 .header-button{
    font-size: small;
    justify-content: left;
@@ -118,6 +134,7 @@ header {
 /* Gaya untuk opsi dan tombol */
 .options {
     margin: 20px;
+    margin-top: -20px;
 }
 
 label {
@@ -132,16 +149,19 @@ select {
     min-width: 30vh;
 }
 
+
 button {
     padding: 5px 10px;
     max-width: 3cm;
     background-color: #24577f;
     color: white;
+    font-size: large;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     margin-bottom: 0.5cm;
     margin-top: 0.2cm;
+    font-size: small;
 }
 #tampilkan {
     margin-left: 2px;

@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS_DATA KELAS.css">
+   <!-- Link ke CSS untuk desktop -->
+<link rel="stylesheet" href="CSS_DATA KELAS.css" media="screen and (min-width: 900px)">
+
+<!-- Link ke CSS untuk perangkat seluler -->
+<link rel="stylesheet" href="CSS_DATA KELAS(HP).css" media="screen and (max-width: 899px)">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Kids Clever Bimbel Gorontalo</title>
 </head>
 <body>
@@ -47,16 +53,20 @@
         <a href="#" class="header-button">Feedback</a>
     </div>    
     <main>
-        <div class="options">
+        <div class="top-container">
             <h2 class="data-title">Data Kelas</h2>
-            <label for="Jenis Bimbel">Jenis Bimbel:</label>
-            <select id="Jenis-Bimbel" name="Jenis Bimbel">
-                <option value="Jenis Bimbel 1">CPNS</option>
-                <option value="Jenis Bimbel 2">TNI/POLRI</option>
-                <option value="Jenis Bimbel 3">KEDINASAN</option>
+            <button type="button" id="plus-button">+ KELAS BARU</button>
+        </div>
+        <div class="options">
+            <label for="Jenis Kelas">Jenis Kelas:</label>
+            <select id="Jenis-Kelas" name="Jenis Kelasl">
+                <option value="Jenis Kelas 1">CPNS</option>
+                <option value="Jenis Kelas 2">TNI/POLRI</option>
+                <option value="Jenis Kelas 3">KEDINASAN</option>
             </select>
             <button id="tampilkan">Tampilkan</button>
             <label for="Kategori"></label>
+
             <label for="Kategori">Kategori :</label>
             <select id="Kategori" name="Kategori">
                 <option value="Kategori 1">PRIVAT</option>
@@ -65,33 +75,35 @@
             </select>
             <button id="tampilkan">Tampilkan</button>
         </div>
+        <div style="overflow-x:auto;" id="table">
         <table class="data-table">
             <thead>
                 <tr>
                     <th>No</th>
-                    <th>Nama</th>
-                    <th>Jenis Bimbel</th>
-                    <th>Kategori</th>
                     <th>Nama Kelas</th>
-                    <th>Jumlah Pertemuan</th>
-                    <th>Jumlah Kehadiran</th>
-                    <th>Pertemuan Saat ini</th>
+                    <th>Jenis Kelas</th>
+                    <th>Kategori</th>
+                    <th>Jadwal</th>
+                    <th>Nama Siswa</th>
+                    <th>Nama Tentor</th>
+                    <th>Status</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>1.</td>
-                    <td class="left-align">AGIS BERLIYAN LINTANG SAKTI</td>
-                    <td>TNI/POLRI</td>
+                    <td class="left-align">CPNS 05</td>
+                    <td>CPNS</td>
                     <td>PRIVAT</td>
-                    <td>BINTARA 02</td>
-                    <td>32 MEET</td>
-                    <td>10</td>
-                    <td>10</td>
+                    <td class="left-align">Selas <br> Kamis <br> Sabtu</td>
+                    <td>Arif</td>
+                    <td class="left-align">Awin <br> Dea <br> Sabrina</td>
+                    <td>Aktif</td>
                 </tr>
                 <!-- Tambahkan baris data lainnya sesuai kebutuhan -->
             </tbody>
         </table>
+    </div>
     </main>
     <script src="script pindah.js">
     </script>

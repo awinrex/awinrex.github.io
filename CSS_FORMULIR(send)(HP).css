@@ -57,63 +57,79 @@ header {
     background-color: #005aa6; /* Warna latar belakang saat dihover */
 }
 
-.paket-text {
-    font-size: 24px;
-    font-weight: bold;
-    color: #0074cc;
-    text-align: center; /* Tengahkan teks secara horizontal */
-    margin-bottom: 0.5cm;
-    margin-top: 1cm;
-}
-
-/* Gaya untuk container gambar */
-/* ... Kode CSS sebelumnya ... */
-
-/* Gaya untuk container gambar */
-.gambar-container {
+/* Apply styles to the form */
+main {
     display: flex;
-    flex-wrap: wrap; /* Baris baru jika gambar lebih dari 4 */
-    justify-content: center; /* Tengahkan gambar secara horizontal */
-    align-items: center; /* Tengahkan gambar secara vertikal */
-    width: 90%;
-    padding: 20px; /* Berikan padding untuk memberi jarak dari pinggir */
-}
-
-/* Gaya untuk gambar */
-.gambar-container a {
-    flex: 0 0 calc(45% - 10px); /* Atur lebar agar ada 4 gambar per baris dan kurangi margin */
-    margin: 10px; /* Berikan margin antar gambar */
-    text-align: center; /* Tengahkan gambar secara horizontal */
-}
-
-/* Gaya untuk gambar */
-.gambar-container img {
-    height: auto; /* Menghindari distorsi gambar */
-    border-radius: 7px;
+    justify-content: space-between;
+    align-items: top;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    padding: 50px; /* Atur padding untuk seluler */
+    border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    max-width: 100%
-    ;
+    margin: 20px 0; /* Atur margin atas dan bawah untuk seluler */
+    height: calc(60vw-70px);
 }
 
-/* Gaya saat menghover gambar */
-.gambar-container a:hover {
-    opacity: 0.7; /* Mengurangi opacity saat hover */
-}
-.main{
-    display:flex;
-    max-width: 100%;
-    justify-content: center;
+.section-left{
+    margin-left: 5px; /* Atur margin atas dan bawah untuk seluler */
     align-items: center;
+}
+
+.section-right{
+    margin-left: 5px; /* Atur margin atas dan bawah untuk seluler */
+    align-items: center;
+
+}
+
+/* Style for labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: small;
+}
+
+/* Style for input elements */
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+    width: 70vw;
+    padding: 7px;
+    border: 1.5px solid #ccc;
+    border-radius: 9px;
+    margin-bottom: 5px;
+}
+
+#input :hover{
+    border: rgb(217, 217, 26);
+}
+
+/* Style for buttons */
+#main-button {
+    background-color: #0074cc;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 3%;
+    font-size: medium;
+}
+
+#main-button:hover {
+    background-color: #005aa6;
 }
 
 .button-container{
     display: flex;
     justify-content: center;
     flex-direction: row;
-    margin-top: .5cm;
     margin-bottom: 1cm;
 }
     
+
 #back-button{
     background-color: white;
     color: #0074cc;
@@ -122,4 +138,10 @@ header {
     border-radius: 30px;
     cursor: pointer;
     font-weight: bold;
+    margin-right: 7%;
+}
+#title{
+    color:#0074cc;
+    margin-top: 1cm;
+    margin-left:15px
 }
