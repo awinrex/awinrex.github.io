@@ -1,0 +1,266 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    max-width: 100%;
+}
+
+/* Apply styles to the header */
+header {
+    background-color: #0074cc;
+    color: white;
+    padding: 10px 0;
+}
+
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header-left img {
+    height: 50px;
+    align-items: center;
+    margin-top: 7.5px;
+    margin-right: 15px;
+    line-height: 10px;
+    display: inline-block; /* Mengubah display menjadi inline-block */
+}
+.header-text {
+    font-size: medium;
+    align-items: top;
+    display: flex;
+    margin-left: 2.3cm;
+    margin-top: -1.45cm;
+    max-width: 4cm;
+}
+.header-right {
+    display: flex;
+}
+.header-right {
+    font-size: 10px;
+    margin-right: -.2cm;
+}
+
+.user-info {
+    display: flex;
+    margin-right: -42PX;
+    margin-bottom: 4px;
+    
+    
+}
+
+.logout-button-container {
+    margin-top: 30px;
+}
+
+.button-logout {
+    text-decoration: none;
+    color: white;
+    background-color: #0074cc;
+    cursor: pointer;
+    padding: 3px 10px; /* Adjust padding as needed */
+    border: 0px solid #0074cc;
+    border-radius: 3px;
+    justify-content: right;
+}
+
+.button-logout:hover {
+    background-color: #005aa6; /* Warna latar belakang saat dihover */
+}
+
+/* Gaya tombol-tombol header */
+.header-buttons {
+    display: flex;
+    background-color: #24577f;
+    text-align: center;
+    padding: 0px;
+    max-width: 100%; /* Lebar maksimum sesuai dengan lebar jendela */
+    overflow-x: auto; /* Tampilkan bilah geser horizontal jika konten melebihi lebar layar */
+    white-space: nowrap; 
+}
+/* Gaya tombol-tombol header */
+.header-buttons {
+    display: flex;
+    background-color: #24577f;
+    text-align: center;
+    padding: 0px;
+    white-space: nowrap; /* Mencegah teks wrap ke bawah */
+    overflow-x: auto; /* Munculkan bilah geser horizontal jika konten melebihi lebar layar */
+    scrollbar-width: none; /* Sembunyikan scrollbar di Firefox */
+    -ms-overflow-style: none; /* Sembunyikan scrollbar di Internet Explorer/Edge */
+}
+
+.header-buttons::-webkit-scrollbar {
+    display: none; /* Sembunyikan scrollbar di Chrome, Safari, dan Opera */
+}
+
+.header-button{
+   font-size: small;
+   justify-content: left;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: transparent;
+    padding: 3px 10px;
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    margin: 5px; /* Jarak antara tombol-tombol */
+    cursor: pointer;
+}
+
+.header-button:hover {
+    background-color: rgb(54, 64, 81); /* Warna latar belakang saat dihover */
+ 
+}
+/* Gaya untuk opsi dan tombol */
+.options {
+    margin: 20px;
+}
+
+label {
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+select {
+    padding: 5px;
+    border-radius: 5px;
+    max-width: 30px;
+    min-width: 30vh;
+}
+
+button {
+    padding: 5px 10px;
+    max-width: 3cm;
+    background-color: #24577f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 0.5cm;
+    margin-top: 0.2cm;
+}
+#tampilkan {
+    margin-left: 2px;
+    padding: 5px 10px;
+}
+
+#tampilkan {
+    background-color: #24577f;
+}
+#tampilkan:hover {
+    background-color: rgb(44, 59, 87);
+}
+.table-container {
+    max-width: 100%; /* Lebar maksimum sesuai dengan lebar jendela */
+    overflow-x: scroll; /* Tampilkan bilah geser horizontal jika konten melebihi lebar layar */
+    white-space: nowrap; 
+}
+/* CSS untuk menghilangkan bilah geser pada tabel */
+.table-container::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    display: none;
+}
+
+/* Gaya untuk tabel data */
+.data-table {
+    max-width: 100%;
+    border-collapse: collapse;
+    margin-left: .5cm;
+    margin-right: .5px;
+    overflow-x: auto;
+    white-space: nowrap;
+    table-layout: fixed; /* Tetapkan lebar tabel agar tidak melampaui lebar kontainernya */
+}
+.options{
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+}
+
+/* CSS untuk menghilangkan bilah geser pada tabel */
+.data-table {
+    /* ... Kode CSS lainnya ... */
+    scrollbar-width: thin; /* Atur lebar bilah geser */
+    scrollbar-color: transparent transparent; /* Atur warna bilah geser */
+}
+
+.data-table::-webkit-scrollbar {
+    width: 5px; /* Lebar bilah geser */
+}
+
+.data-table::-webkit-scrollbar-track {
+    background: transparent; /* Warna latar belakang bilah geser */
+}
+
+.data-table::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Warna bilah geser itu sendiri */
+    border: 1px solid transparent; /* Atur border */
+}
+
+.data-table::-webkit-scrollbar{
+    display: none;
+
+}
+
+.data-table th {
+    padding: 10px;
+    font-size: small;
+    text-align: center;
+    border: 1px solid #9a9a9a;
+    background-color: #24577f;
+    color: white;
+}
+
+.data-table td {
+    font-size: small;
+    padding: 10px;
+    max-height: 100%;
+    text-align: center; /* Rata tengah seluruh kolom, kecuali yang memiliki kelas "left-align" */
+    border: 1px solid #9a9a9a;
+    background-color: #ffffff;
+    margin-bottom: 1cm;
+    color: rgb(0, 0, 0);
+}
+/* Gaya untuk tabel data */
+.data-table th:nth-child(1) { width: 2%; }
+.data-table th:nth-child(2) { width: 30%; }
+.data-table th:nth-child(3) { width: 10%; }
+.data-table th:nth-child(4) { width: 8%; }
+.data-table th:nth-child(5) { width: 8%; }
+.data-table th:nth-child(6) { width: 8%; }
+
+/* Gaya untuk sel-sel dengan kelas "left-align" (kolom "Nama Tentor") */
+.data-table td.left-align {
+    text-align: left; /* Rata kiri isi kolom "Nama Tentor" yang memiliki kelas "left-align" */
+}
+
+/* Gaya untuk tombol "Lihat" */
+.lihat-button {
+        background-color: #e2e1e1;
+        border: none;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        text-decoration: underline;
+        font-size: small;
+        margin-top: -2px;
+        vertical-align: center; /* Mengatur tombol di tengah vertikal */
+        display: inline-block; /* Mengubah display menjadi inline-block */
+        padding: 5px 10px; /* Atur padding untuk memberi ruang di sekitar tombol */
+}
+.lihat-button:hover {
+    background-color: #b4b0b0;
+}
+
+/*DATA TENTOR KIRI ATAS BODY*/
+.data-title {
+    color: #24577f;
+    font-size: x-large;
+    margin-bottom: .5cm;
+}
+
+
