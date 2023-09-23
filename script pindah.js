@@ -117,38 +117,45 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 //untuk mendapatkan data API
-// Contoh menggunakan Google Apps Script Web App URL
-const scriptUrl = 'https://script.google.com/macros/s/AKfycbzFTU-R0G2uAwmv9a7sb-JPVBrNr0kUAis9eY_UOcDNjM6IfUgpmpUgYna_Yl-XYEzoQg/exec';
+// URL endpoint dari Google Apps Script
+fetch('https://script.google.com/macros/s/AKfycbzFTU-R0G2uAwmv9a7sb-JPVBrNr0kUAis9eY_UOcDNjM6IfUgpmpUgYna_Yl-XYEzoQg/exec')
+    .then(response => response.json())
+    .then(data => {
+        var table = document.getElementById('tentor-table').getElementsByTagName('tbody')[0];
+        var counter = 1; // Counter untuk nomor urut
+        data.forEach(row => {
+            var newRow = table.insertRow();
+            var cellNo = newRow.insertCell(0); // Kolom No
+            cellNo.appendChild(document.createTextNode(counter));
+            var cellNama = newRow.insertCell(1); // Kolom Nama
+            cellNama.appendChild(document.createTextNode(row[0])); // Kolom Nama diambil dari kolom pertama
+            var cellBidang = newRow.insertCell(2); // Kolom Bidang
+            cellBidang.appendChild(document.createTextNode(row[1])); // Kolom Bidang diambil dari kolom kedua
 
-fetch(scriptUrl)
-  .then(response => response.json())
-  .then(data => {
-    // Manipulasi data dan tambahkan ke tabel HTML
-    const tableBody = document.querySelector('#table tbody');
-    data.forEach((row, index) => {
-      const newRow = document.createElement('tr');
-      newRow.innerHTML = `
-        <td>${index + 1}</td>
-        <td>${row.nama}</td>
-        <td>${row.bidang}</td>
-        <td><button class="lihat-button">Lihat</button></td>
-        <td><button class="lihat-button">Lihat</button></td>
-        <td><button class="lihat-button">Lihat</button></td>
-      `;
-      tableBody.appendChild(newRow);
+            // Kolom "Jadwal"
+            var cellJadwal = newRow.insertCell(3);
+            cellJadwal.appendChild(document.createTextNode(row[2] || '')); // Menggunakan data jika ada atau string kosong jika tidak
+
+            // Kolom "Rekap Absen"
+            var cellRekapAbsen = newRow.insertCell(4);
+            cellRekapAbsen.appendChild(document.createTextNode(row[3] || '')); // Menggunakan data jika ada atau string kosong jika tidak
+
+            // Kolom "Berkas"
+            var cellBerkas = newRow.insertCell(5);
+            cellBerkas.appendChild(document.createTextNode(row[4] || '')); // Menggunakan data jika ada atau string kosong jika tidak
+
+            // Tambahkan gaya CSS ke semua sel
+            newRow.querySelectorAll("td").forEach(cell => {
+                cell.style.border = "1px solid #ccc"; // Atur border untuk semua sel
+                cell.style.padding = "8px"; // Atur padding untuk semua sel
+            });
+
+            counter++; // Increment nomor urut
+        });
+    })
+    .catch(error => {
+        console.error('Error fetching data:', error);
     });
-  })
-  .catch(error => {
-    console.error('Error:', error);
-  });
 
-  function updateTable() {
-    // Isi kode JavaScript untuk mengambil data dari Google Sheets dan memperbarui tabel HTML
-    // ...
-  }
-  
-  // Buat trigger yang akan menjalankan fungsi updateTable() setiap 5 detik (5000 milidetik)
-  const updateInterval = 5000; // 5000 ms (5 detik)
-  setInterval(updateTable, updateInterval);
-  
+
   

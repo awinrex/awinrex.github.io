@@ -93,6 +93,7 @@ header {
 /* Gaya untuk opsi dan tombol */
 .options {
     margin: 20px;
+    margin-top: -20px;
 }
 
 label {
@@ -128,6 +129,32 @@ button {
 .table-container {
     overflow-x: auto; /* Tampilkan bilah geser horizontal jika konten tabel terlalu lebar */
     max-width: 100%; /* Lebar maksimum sesuai dengan lebar jendela */
+}
+
+#plus-button{
+    font-size: small;
+    padding: 5px 10px;
+    margin-top: 2px;
+    background-color: #24577f;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#button :hover{
+color: #24577f;
+background-color: #ffffff;
+
+}
+
+
+.top-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    align
 }
 
 /* Gaya untuk tabel data */
@@ -194,3 +221,4 @@ button {
     /* Gaya CSS untuk layar dengan lebar minimum 769px (desktop) */
     /* Sesuaikan tampilan untuk layar desktop */
 }
+

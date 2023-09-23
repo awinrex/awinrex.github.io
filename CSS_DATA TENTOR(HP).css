@@ -113,11 +113,32 @@ header {
 
 .header-button:hover {
     background-color: rgb(54, 64, 81); /* Warna latar belakang saat dihover */
- 
 }
+    
+    #button :hover{
+    color: #24577f;
+    background-color: #ffffff;
+    
+    }
+    
+    
+    #plus-button{
+        font-size: x-small;
+        max-width: 7cm;
+        margin-top: 2px;
+    }
+    
+    .top-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 20px;
+        align-items: center;
+    }
 /* Gaya untuk opsi dan tombol */
 .options {
     margin: 20px;
+    margin-top: -20px;
 }
 
 label {

@@ -53,8 +53,11 @@
         <a href="#" class="header-button">Feedback</a>
     </div>    
     <main>
-        <div class="options">
+        <div class="top-container">
             <h2 class="data-title">Data Tentor</h2>
+            <button type="button" id="plus-button">+ TENTOR BARU</button>
+        </div>
+        <div class="options">
             <label for="bidang">Bidang:</label>
             <select id="bidang" name="bidang">
                 <option value="Bidang 1">Bidang 1</option>
@@ -65,32 +68,25 @@
         </div>
         
         <div style="overflow-x:auto;" id="table">
-        <table class="data-table">
-            <thead>
-                <tr>
-                    <th>No</th>
-                    <th>Nama Tentor</th>
-                    <th>Bidang</th>
-                    <th>Jadwal</th>
-                    <th>Rekap Absen</th>
-                    <th>Berkas</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1.</td>
-                    <td class="left-align">PUTRI NURRAHMA DARISE</td>
-                    <td>Bahasa Inggris</td>
-                    <td><button class="lihat-button">Lihat</button></td>
-                    <td><button class="lihat-button">Lihat</button></td>
-                    <td><button class="lihat-button">Lihat</button></td>
-                </tr>
-                <!-- Tambahkan baris data lainnya sesuai kebutuhan -->
-            </tbody>
-        </table>
+            <table id="tentor-table" class="data-table">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nama</th>
+                        <th>Bidang</th>
+                        <th>Jadwal</th>
+                        <th>Rekap Absen</th>
+                        <th>Berkas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data akan ditambahkan secara dinamis melalui JavaScript -->
+                </tbody>
+                <script src="ambil data.js">
+                </script>  
+                <script src="script pindah.js"></script>
+            </table> 
         </div>
     </main>
-    <script src="script pindah.js"></script>
-    
 </body>
 </html>

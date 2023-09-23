@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data dari Google Spreadsheet</title>
+</head>
+<body>
+    <h1>Data dari Google Spreadsheet</h1>
+    <table id="data-table" class="data-table">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Bidang</th>
+                <th>Jadwal</th>
+                <th>Rekap Absen</th>
+                <th>Berkas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data akan ditambahkan secara dinamis melalui JavaScript -->
+        </tbody>
+    </table>
+
+    <script>
+        fetch('https://script.google.com/macros/s/AKfycbzFTU-R0G2uAwmv9a7sb-JPVBrNr0kUAis9eY_UOcDNjM6IfUgpmpUgYna_Yl-XYEzoQg/exec')
+            .then(response => response.json())
+            .then(data => {
+                var table = document.getElementById('data-table').getElementsByTagName('tbody')[0];
+                var counter = 1; // Counter untuk nomor urut
+                data.forEach(row => {
+                    var newRow = table.insertRow();
+                    var cellNo = newRow.insertCell(0); // Kolom No
+                    cellNo.appendChild(document.createTextNode(counter));
+                    var cellNama = newRow.insertCell(1); // Kolom Nama
+                    cellNama.appendChild(document.createTextNode(row[0])); // Kolom Nama diambil dari kolom pertama
+                    var cellBidang = newRow.insertCell(2); // Kolom Bidang
+                    cellBidang.appendChild(document.createTextNode(row[1])); // Kolom Bidang diambil dari kolom kedua
+                    counter++; // Increment nomor urut
+                });
+            })
+            .catch(error => {
+                console.error('Error fetching data:', error);
+            });
+    </script>
+</body>
+</html>

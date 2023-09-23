@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <!-- Link ke CSS untuk desktop -->
-<link rel="stylesheet" href="CSS_DATA KELAS.css" media="screen and (min-width: 900px)">
+<link rel="stylesheet" href="CSS_DATA KELAS.css" media="screen and (min-width: 896px)">
 
 <!-- Link ke CSS untuk perangkat seluler -->
-<link rel="stylesheet" href="CSS_DATA KELAS(HP).css" media="screen and (max-width: 899px)">
+<link rel="stylesheet" href="CSS_DATA KELAS(HP).css" media="screen and (max-width: 895px)">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Kids Clever Bimbel Gorontalo</title>
@@ -57,6 +57,49 @@
             <h2 class="data-title">Data Kelas</h2>
             <button type="button" id="plus-button">+ KELAS BARU</button>
         </div>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <h2>TAMBAH KELAS BARU</h2>
+                <form id="kelas-form" class="button-container">
+                    <label for="nama-kelas">Nama Kelas:</label>
+                    <input type="text" id="nama-kelas" name="nama-kelas" required>
+        
+                    <label for="jenis-kelas">Jenis Kelas:</label>
+                    <select id="jenis-kelas" name="jenis-kelas" required>
+                        <option value="CPNS">CPNS</option>
+                        <option value="TNI/POLRI">TNI/POLRI</option>
+                        <option value="KEDINASAN">KEDINASAN</option>
+                    </select>
+        
+                    <label for="kategori">Kategori:</label>
+                    <select id="kategori" name="kategori" required>
+                        <option value="PRIVAT">PRIVAT</option>
+                        <option value="SEMI PRIVAT">SEMI PRIVAT</option>
+                        <option value="GROUP">GROUP</option>
+                    </select>
+        
+                    <label for="jadwal">Jadwal:</label>
+                    <textarea id="jadwal" name="jadwal" required></textarea>
+        
+                    <label for="nama-siswa">Nama Siswa:</label>
+                    <input type="text" id="nama-siswa" name="nama-siswa" required>
+        
+                    <label for="nama-tentor">Nama Tentor:</label>
+                    <input type="text" id="nama-tentor" name="nama-tentor" required>
+        
+                    <label for="status">Status:</label>
+                    <input type="text" id="status" name="status" required>
+                    
+                    <div class="button-container">
+                        <button id="submit-button" type="submit">Simpan</button>
+                    <button type="button" class="close" id="close-button">Batal</button>
+                   
+                </div>
+                </form>
+                <script src="form_kelas.js"></script>
+            </div>
+        </div>
+        
         <div class="options">
             <label for="Jenis Kelas">Jenis Kelas:</label>
             <select id="Jenis-Kelas" name="Jenis Kelasl">

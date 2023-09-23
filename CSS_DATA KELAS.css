@@ -221,3 +221,102 @@ select {
     color: #24577f;
     font-size: xx-large;
 }
+
+/* CSS untuk modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    align-content: top;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #f0f0f0;
+    border: 5px #9a9a9a;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 400px;
+    margin-top: 90px;
+    max-width: 600px;
+}
+
+
+/* CSS untuk form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.modal-content form label {
+    margin-top: 5px;
+    margin-left: 5%;
+    background-color: #f0f0f0;
+    margin-bottom: -.08cm;
+} 
+
+.modal-content h2{
+    color: #0074cc;
+margin-left: 2cm;
+margin-top: 5px;
+margin-bottom: .5cm;
+}
+
+.modal-content form input, 
+.modal-content form textarea, 
+.modal-content form select{
+    width: 90%;
+    height: 25px;
+    margin-top: -2px;
+    border-radius: 5px;
+    margin-left: 5%;
+}
+
+.close {
+    background-color: #f0f0f0; /* Warna latar belakang tombol */
+    color: rgb(146, 7, 7); /* Warna teks tombol */
+    padding: 5px 15px; /* Padding pada tombol */
+    border: 2px solid rgb(205, 5, 5); /* Menghilangkan border */
+    border-radius: 7px; /* Mengubah sudut tombol menjadi agak melengkung */
+    cursor: pointer;
+    font-size: 16px;
+    width: 30%;
+    margin-top: 10px;
+    margin-left: 5%;
+}
+
+.logout-button-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.close :hover{
+    background-color: #981414;
+}
+
+#submit-button {
+    background-color: #0074cc; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    padding: 5px 15px; /* Padding pada tombol */
+    border: 2px; /* Menghilangkan border */
+    border-radius: 7px; /* Mengubah sudut tombol menjadi agak melengkung */
+    cursor: pointer;
+    font-size: 16px;
+    width: 30%;
+    margin-top: 10px;
+    margin-left: 5%;
+}
+
+#submit-button:hover {
+    background-color: #1e2152; /* Warna latar belakang tombol saat dihover */
+}
